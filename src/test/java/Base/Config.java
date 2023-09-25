@@ -17,7 +17,7 @@ public class Config {
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        
+
         driver.get("https://prod.taltektc.com/home/signup");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
